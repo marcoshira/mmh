@@ -11,7 +11,7 @@ export const FooterLink = ({
   return (
     <Styled.Wrapper showHover={showHover}>
       {Link_url ? (
-        <a href={Link_url}>
+        <a href={Link_url} target="_blank" rel="noreferrer">
           <img src={Logo.data.attributes.url} />
           <Styled.LinkWrapper>{Link_profile}</Styled.LinkWrapper>
         </a>

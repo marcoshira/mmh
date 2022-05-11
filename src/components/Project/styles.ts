@@ -12,10 +12,9 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
-    box-shadow: 4px 3px 10px ${theme.colors.thirdColor};
+    box-shadow: 0px 1px 9px ${theme.colors.thirdColor};
     img {
       width: 320px;
-      box-shadow: 3px 2px 5px ${theme.colors.primaryColor};
       margin: 0 ${theme.spacings.xlarge};
     }
 

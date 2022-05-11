@@ -8,8 +8,8 @@ export const Wrapper = styled.span`
     flex-direction: row;
     justify-content: center;
     padding: ${theme.spacings.xsmall} 0;
-    border: 1.5px solid ${theme.colors.secondaryColor};
-    border-radius: 10px;
+    border-bottom: 0.5px solid ${theme.colors.thirdColor};
+    /* border-radius: 10px; */
     position: relative;
     a {
       text-decoration: none;

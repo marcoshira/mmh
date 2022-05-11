@@ -12,8 +12,8 @@ export const Wrapper = styled.figure`
       width: 180px;
       height: 180px;
       border-radius: 10%;
-      box-shadow: 5px 3px 10px ${theme.colors.thirdColor};
-      background: ${theme.colors.primaryColor};
+      box-shadow: 0px 1px 10px ${theme.colors.thirdColor};
+      background: ${theme.colors.navy};
     }
 
     @media ${theme.media.lteMedium} {

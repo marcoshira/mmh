@@ -24,6 +24,7 @@ export const ContentWrapper = styled.div`
     display: flex;
     flex-flow: row nowrap;
     width: 85%;
+    text-align: justify;
     img {
       width: 620px;
       height: 500px;

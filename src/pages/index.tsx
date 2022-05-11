@@ -2,9 +2,17 @@ import { Home } from '../templates/Home';
 import { GetStaticProps } from 'next';
 import { StrapiData } from '../shared-types/shared-types';
 import { loadPosts } from '../api/load-posts';
+import Head from 'next/head';
 
 export default function Index({ mmh }: StrapiData) {
-  return <Home {...mmh.data} />;
+  return (
+    <>
+      <Head>
+        <title>Marcos Hirazawa</title>
+      </Head>
+      <Home {...mmh.data} />
+    </>
+  );
 }
 
 export const getStaticProps: GetStaticProps<StrapiData> = async () => {
