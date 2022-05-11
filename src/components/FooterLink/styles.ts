@@ -35,6 +35,7 @@ export const LinkWrapper = styled.span`
     position: relative;
     left: ${theme.spacings.xsmall};
     top: 0px;
+    color: ${theme.colors.footerPrimaryColor};
   `}
 `;
 

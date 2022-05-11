@@ -19,6 +19,8 @@ export const theme = {
     brown: 'rgb(116, 45, 45)',
     grey: '#d8d8c0',
     darkGrey: '#7a8370',
+    footerPrimaryColor: '#0A1128',
+    footerWhite: '#FFFFFF',
   },
   font: {
     family: {

@@ -10,7 +10,7 @@ export type LogoLinkProps = {
 export const LogoLink = ({ text, srcImg }: LogoLinkProps) => {
   return (
     <Heading size="small" uppercase>
-      <Styled.Container href="/" target="_self">
+      <Styled.Container href="#Sobre" target="_self">
         {srcImg.data ? (
           <img src={srcImg.data.attributes.url} alt={text} />
         ) : (

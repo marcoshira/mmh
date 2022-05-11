@@ -3,9 +3,13 @@ import { Container as SectionContainer } from '../SectionContainer/styles';
 
 export const Container = styled.footer`
   ${({ theme }) => css`
+    background: ${theme.colors.footerWhite};
+    color: ${theme.colors.footerPrimaryColor};
+
     text-align: center;
     border-top: 0.2rem solid ${theme.colors.thirdColor};
-    margin: ${theme.spacings.xlarge} 0;
+    margin-top: ${theme.spacings.huge};
+    padding-bottom: ${theme.spacings.large};
 
     ${SectionContainer} {
       > span {
@@ -21,7 +25,6 @@ export const Wrapper = styled.div`
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-evenly;
-
     margin-top: ${theme.spacings.large};
   `}
 `;

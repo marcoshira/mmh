@@ -53,6 +53,8 @@ export const BlogThemeProvider = ({ children }: BlogThemeProviderProps) => {
             brown: 'rgb(116, 45, 45)',
             grey: '#d8d8c0',
             darkGrey: '#7a8370',
+            footerPrimaryColor: '#FFFFFF',
+            footerWhite: '#df8615',
           },
         };
         setBlogTheme(newTheme);
