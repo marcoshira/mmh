@@ -17,6 +17,8 @@ html {
 body{
   font-size: 1.6rem;
   font-family: ${({ theme }) => theme.font.family.default};
+  font-weight: 500;
+  color: ${({ theme }) => theme.colors.primaryColor};
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -35,7 +37,7 @@ ul, ol{
 }
 
 a{
-  color: ${({ theme }) => theme.colors.secondaryColor}
+  color: ${({ theme }) => theme.colors.thirdColor}
 }
 
 .table {

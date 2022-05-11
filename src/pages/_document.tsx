@@ -45,7 +45,7 @@ export default class MyDocument extends Document {
             crossOrigin="true"
           ></link>
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Roboto+Slab:wght@400;500&display=swap"
             rel="stylesheet"
           ></link>
         </Head>
