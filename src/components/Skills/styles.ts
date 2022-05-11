@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding-top: ${theme.spacings.medium};
+    padding-top: ${theme.spacings.xlarge};
 
     ${Title} {
       margin-bottom: ${theme.spacings.huge};
@@ -15,8 +15,6 @@ export const Wrapper = styled.div`
 `;
 
 export const SkillsWrapper = styled.div`
-  ${({ theme }) => css`
-    display: grid;
-    grid: repeat(2, 250px) / auto-flow 230px;
-  `}
+  display: grid;
+  grid: repeat(2, 250px) / auto-flow 230px;
 `;

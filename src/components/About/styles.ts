@@ -3,7 +3,7 @@ import { Title } from '../Heading/styles';
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    padding-top: ${theme.spacings.medium};
+    padding-top: ${theme.spacings.xlarge};
     display: flex;
     flex-flow: column nowrap;
     align-items: center;

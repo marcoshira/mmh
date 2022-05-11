@@ -19,6 +19,7 @@ body{
   font-family: ${({ theme }) => theme.font.family.default};
   font-weight: 500;
   color: ${({ theme }) => theme.colors.primaryColor};
+  background: ${({ theme }) => theme.colors.white};
 }
 
 h1, h2, h3, h4, h5, h6{

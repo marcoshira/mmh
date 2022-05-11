@@ -7,6 +7,12 @@ export default {
   title: 'Home',
   component: Home,
   args: mock.data.mmh.data,
+  parameters: {
+    layout: 'fullscreen',
+    backgrounds: {
+      default: '',
+    },
+  },
 } as Meta<HomeProps>;
 
 export const Template: Story<HomeProps> = (args) => {

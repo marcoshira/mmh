@@ -13,6 +13,8 @@ import {
   CursosProps,
   FooterProps,
 } from '../../shared-types/shared-types';
+import { GoTop } from '../../components/GoTop';
+import { ToggleTheme } from '../../components/ToggleTheme';
 
 export type HomeProps = {
   attributes: Attributes;
@@ -30,12 +32,14 @@ export type Attributes = {
 export function Home({ attributes }: HomeProps) {
   return (
     <Styled.Wrapper>
+      <ToggleTheme />
       <Menu {...attributes.Menu} />
       <About {...attributes.About} />
       <Skills {...attributes.Skills} />
       <Projects {...attributes.Projects} />
       <Cursos {...attributes.Cursos} />
       <Footer {...attributes.Footer} />
+      <GoTop />
     </Styled.Wrapper>
   );
 }

@@ -13,6 +13,7 @@ export const Wrapper = styled.figure`
       height: 180px;
       border-radius: 10%;
       box-shadow: 5px 3px 10px ${theme.colors.thirdColor};
+      background: ${theme.colors.primaryColor};
     }
   `}
 `;
