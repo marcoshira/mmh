@@ -7,6 +7,12 @@ export default {
   title: 'Projects',
   component: Projects,
   args: mock.data.mmh.data.attributes.Projects,
+  parameters: {
+    layout: 'fullscreen',
+    backgrounds: {
+      default: '',
+    },
+  },
 } as Meta<ProjectsProps>;
 
 export const Template: Story<ProjectsProps> = (args) => {

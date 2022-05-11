@@ -37,6 +37,7 @@ export const Container = styled.div<MenuVisible>`
       visibility: hidden;
       opacity: 0;
       ${visible && menuVisible()}
+      border-bottom: none;
 
       > ${SectionContainer} {
         display: grid;
@@ -80,8 +81,8 @@ export const Button = styled.button`
     height: 4rem;
     background: ${theme.colors.thirdColor};
     color: ${theme.colors.white};
-    border: 0.1rem solid ${theme.colors.mediumGrey};
     display: none;
+    border: none;
 
     > svg {
       width: 2.5rem;

@@ -24,5 +24,22 @@ export const Wrapper = styled.span`
       position: absolute;
       left: 20px;
     }
+
+    @media ${theme.media.lteMedium} {
+      width: 90%;
+      flex-direction: column;
+      height: 50px;
+      align-items: center;
+
+      span {
+        font-size: ${theme.font.sizes.xsmall};
+        position: static;
+        margin-bottom: 5px;
+      }
+      a {
+        position: static;
+        font-size: ${theme.font.sizes.xsmall};
+      }
+    }
   `}
 `;

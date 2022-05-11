@@ -26,5 +26,11 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: space-evenly;
     margin-top: ${theme.spacings.large};
+
+    @media ${theme.media.lteMedium} {
+      flex-direction: column;
+      margin-top: 0;
+      justify-content: center;
+    }
   `}
 `;

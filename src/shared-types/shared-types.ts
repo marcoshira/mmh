@@ -1,3 +1,5 @@
+import { HomeProps } from '../templates/Home';
+
 export type MenuProps = {
   Menu_text: string;
   Menu_logo: StrapiImage;
@@ -75,4 +77,16 @@ export type FooterLinkProps = {
   Link_profile: string;
   Link_url?: string;
   Logo: StrapiImage;
+};
+
+export type StrapiProps = {
+  data: StrapiData;
+};
+
+export type StrapiData = {
+  mmh: StrapiMmh;
+};
+
+export type StrapiMmh = {
+  data: HomeProps;
 };

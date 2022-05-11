@@ -1,45 +1,91 @@
 import { gql } from 'graphql-request';
-import { GRAPHQL_FRAGMENTS } from './fragments';
 
 export const GRAPHQL_QUERY = gql`
-  ${GRAPHQL_FRAGMENTS}
-
-  query GET_POSTS(
-    $categorySlug: String
-    $postSlug: String
-    $postSearch: String
-    $authorSlug: String
-    $tagSlug: String
-    $sort: [String] = "createdAt:desc"
-    $start: Int = 0
-    $limit: Int = 10
-  ) {
-    posts(
-      sort: $sort
-      pagination: { limit: $limit, start: $start }
-      filters: {
-        slug: { eq: $postSlug }
-        author: { slug: { eq: $authorSlug } }
-        tags: { slug: { eq: $tagSlug } }
-        categories: { slug: { eq: $categorySlug } }
-        or: [
-          { title: { contains: $postSearch } }
-          { content: { contains: $postSearch } }
-          { excerpt: { contains: $postSearch } }
-        ]
-      }
-    ) {
-      data {
-        id
-        attributes {
-          ...posts
-        }
-      }
-    }
-    setting {
+  query GET_MMH {
+    mmh {
       data {
         attributes {
-          ...settings
+          Menu {
+            Menu_text
+            Menu_logo {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+            Menu_link {
+              id
+              Text
+              Url
+              NewTab
+            }
+          }
+          About {
+            Title
+            Content
+            Image {
+              data {
+                attributes {
+                  url
+                }
+              }
+            }
+          }
+          Skills {
+            Title
+            Skill {
+              id
+              Skill_name
+              Skill_description
+              Skill_logo {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+          Projects {
+            Title
+            Project {
+              id
+              Project_title
+              Project_description
+              Project_link
+              Project_image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+          Cursos {
+            Title
+            Curso {
+              id
+              Title
+              Certificado_url
+            }
+          }
+          Footer {
+            Footer_text
+            Footer_link {
+              id
+              Link_profile
+              Link_url
+              Logo {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

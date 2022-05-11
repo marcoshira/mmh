@@ -15,6 +15,15 @@ export const Wrapper = styled.figure`
       box-shadow: 5px 3px 10px ${theme.colors.thirdColor};
       background: ${theme.colors.primaryColor};
     }
+
+    @media ${theme.media.lteMedium} {
+      font-size: ${theme.font.sizes.small};
+
+      img {
+        width: 90px;
+        height: 90px;
+      }
+    }
   `}
 `;
 

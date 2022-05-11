@@ -18,6 +18,19 @@ export const Wrapper = styled.div`
       box-shadow: 3px 2px 5px ${theme.colors.primaryColor};
       margin: 0 ${theme.spacings.xlarge};
     }
+
+    @media ${theme.media.lteMedium} {
+      font-size: ${theme.font.sizes.small};
+      width: 85%;
+      max-width: 85%;
+      flex-flow: column wrap;
+      margin: ${theme.spacings.medium};
+      margin-top: 0;
+
+      img {
+        width: 225px;
+      }
+    }
   `}
 `;
 
@@ -31,7 +44,7 @@ export const TextWrapper = styled.div`
 
     a {
       text-decoration: none;
-      padding: ${theme.spacings.medium} 0;
+      /* padding: ${theme.spacings.medium} 0; */
 
       &:hover {
         color: ${theme.colors.secondaryColor};

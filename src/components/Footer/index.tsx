@@ -1,5 +1,4 @@
 import * as Styled from './styles';
-import { SectionContainer } from '../SectionContainer';
 import { FooterProps } from '../../shared-types/shared-types';
 import { FooterLink } from '../FooterLink';
 import { Heading } from '../Heading';

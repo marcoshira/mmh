@@ -7,6 +7,12 @@ export default {
   title: 'Footer',
   component: Footer,
   args: mock.data.mmh.data.attributes.Footer,
+  parameters: {
+    layout: 'fullscreen',
+    backgrounds: {
+      default: '',
+    },
+  },
 } as Meta;
 
 export const Template: Story<FooterProps> = (args) => {

@@ -7,6 +7,12 @@ export default {
   title: 'Cursos',
   component: Cursos,
   args: mock.data.mmh.data.attributes.Cursos,
+  parameters: {
+    layout: 'fullscreen',
+    backgrounds: {
+      default: '',
+    },
+  },
 } as Meta<CursosProps>;
 
 export const Template: Story<CursosProps> = (args) => {

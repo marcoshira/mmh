@@ -11,10 +11,33 @@ export const Wrapper = styled.div`
     ${Title} {
       margin-bottom: ${theme.spacings.huge};
     }
+
+    @media ${theme.media.lteMedium} {
+      width: 100%;
+      padding-top: 0;
+      overflow-x: hidden;
+      flex-flow: column wrap;
+      text-align: center;
+
+      ${Title} {
+        margin-bottom: ${theme.spacings.medium};
+      }
+    }
   `}
 `;
 
 export const SkillsWrapper = styled.div`
-  display: grid;
-  grid: repeat(2, 250px) / auto-flow 230px;
+  ${({ theme }) => css`
+    display: grid;
+    grid: repeat(2, 250px) / auto-flow 230px;
+
+    @media ${theme.media.lteMedium} {
+      grid: repeat(3, 130px) / auto-flow 120px;
+
+      /* img {
+        width: 70px;
+        height: 90px;
+      } */
+    }
+  `}
 `;

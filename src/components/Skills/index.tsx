@@ -6,7 +6,7 @@ import * as Styled from './styles';
 export const Skills = ({ Skill, Title }: SkillsProps) => {
   return (
     <Styled.Wrapper id="Habilidades">
-      <Heading>{Title}</Heading>
+      <Heading size="huge">{Title}</Heading>
       <Styled.SkillsWrapper>
         {Skill.map((skill) => (
           <SkillElement key={skill.id} {...skill} />

@@ -27,6 +27,11 @@ export const Wrapper = styled.div<showHover>`
         ${showHover && hover(theme)}
       }
     }
+
+    @media ${theme.media.lteMedium} {
+      margin-bottom: ${theme.spacings.medium};
+      margin-left: 0;
+    }
   `}
 `;
 
@@ -44,5 +49,9 @@ export const NoLinkWrapper = styled.a`
     position: relative;
     left: ${theme.spacings.xsmall};
     top: 0px;
+
+    @media ${theme.media.lteMedium} {
+      left: 0px;
+    }
   `}
 `;

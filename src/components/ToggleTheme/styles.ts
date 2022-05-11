@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   position: fixed;
   top: 8rem;
   right: 2rem;
-  z-index: 2;
+  z-index: 6;
 `;
 
 export const Label = styled.label`
